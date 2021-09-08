@@ -1,0 +1,362 @@
+$background-grey: #f2f4f8;
+$progressbar-blue: #007bff;
+$progressbar-green: #47be8a;
+$progressbar-red: #fb424a;
+$progressbar-darkgrey: #acb7bf;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: $background-grey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+img {
+    max-width: 100%;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.sidebar {
+    ul {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .rp-logo {
+        background-color: rgb(1, 1, 44);
+        padding: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .separator {
+        background-color: #CFD8DC;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 1px;
+        margin-bottom: 5%;
+    }
+}
+
+.sidebar {
+    grid-column: 1/3;
+    grid-row: 1/13;
+    height: 100%;
+    display: inline-block;
+    z-index: 50;
+    background-color: white;
+}
+
+
+.navbar-top {
+    background-color: white;
+    grid-column: 1/13;
+    grid-row: 1;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgb(206, 202, 202);
+}
+
+.navbar-top {
+    .menu-icon {
+        height: 80%;
+        width: 40px;
+        // float: left;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 10px;
+        // display: none;
+    }
+    .avatar {
+        // display: inline-block;
+        height: 80%;
+        width: 40px;
+        float: right;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+}
+
+.progress-info {
+    grid-column: 3/13;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.progress-info {
+    .below-text{
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .numerical {
+        font-size: 23px;
+        font-weight: bold;
+        display: inline-block;
+        float: right;
+    }
+    
+    .progress-card {
+        padding: 20px;
+        border-radius: 10px;
+        // grid-column: 3/8;
+        background-color: white;
+    }
+    .line-rep {
+        width: 100%;
+        height: 10px;
+        background-color: lightgrey;
+        border-radius: 10px;
+    } 
+    .sub-heading {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .line-rep {
+        .bar {
+            // background-color: rgb(33, 99, 186);
+            // width: 78%;
+            height: 10px;
+            border-radius: 10px;
+        }
+    }
+    .change-text {
+        display: inline-block;
+        font-size: 12px;
+        float: left;
+        color: grey;
+    }
+    .percentage-text {
+        display: inline-block;
+        float: right;
+        font-size: 12px;
+        color: grey;
+    }
+
+    
+    .referrals {
+        grid-column: 1/3;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+
+h3 {
+    grid-column: 3/13;
+}
+
+
+
+table {
+    width: 100%;
+    word-break: break-all;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid lightgrey;
+}
+
+th {
+    background-color: lightgrey;
+    border-top: 1px solid lightgrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+td {
+    padding: 10px;
+}
+
+.cards {
+    grid-column: 3/13;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cards {
+    .card-each {
+        background-color: white;
+        height: 300px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
+}
+
+.card-each {
+    .card-balance {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 10px;
+        background-color: $progressbar-green;
+        padding: 10px 15px 10px 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    img {
+        height: 100px;
+        width: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .cardholder-name {
+        font-size: 21px;
+        font-weight: bolder;
+    }
+    .card-number {
+        font-size: 16px;
+        color: grey;
+    }
+    .card-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: grey;
+        padding-top: 30px;
+    }
+    .separator {
+        background-color: #CFD8DC;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 1px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .card-expiry {
+        font-style: italic;
+        color: grey;
+    }
+}
+
+.teams {
+    grid-column: 3/13;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.teams {
+    .each-team {
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    .team-name {
+        text-align: left;
+        font-weight: bolder;
+        padding-bottom: 10px;
+    }
+    .team-description, .team-amount {
+        text-align: center;
+        color: grey;
+    }
+
+    .separator {
+        background-color: #CFD8DC;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .initials-circle {
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        border-radius: 50%;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        padding: 2px;
+        padding-top: 10px;
+    }
+   
+}
+
+.team-members {
+    // float:right;
+    text-align: right;
+}
+
+.team-members {
+    .initials-circle {
+        margin-left: -18px;
+    }
+}
+
+@media only screen and (max-device-width: 667px)  {
+    .sidebar {
+        grid-column: 1/13;
+    }
+    // .menu-icon {
+    //     display: block;
+    // }
+    .grid-container {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 5px;
+    }
+    .progress-info {
+        grid-column: 1/13;
+    }
+    .progress-card {
+        grid-column: 1/3;
+    }
+    .referrals {
+        grid-column: 1/3;
+    }
+    .cards {
+        grid-column: 1/13;
+    }
+    .card-each {
+        grid-column: 1/4;
+    }
+    .last-team {
+        margin-bottom: 20px;
+    }
+    .teams {
+        grid-column: 1/13;
+    }
+    .each-team {
+        grid-column: 1/5;
+    }
+    h3 {
+        grid-column: 1/13;
+    }
+}
+
+
+
