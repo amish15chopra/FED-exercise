@@ -15,29 +15,61 @@
 </head>
 
 <body>
+
+    <div id="modal-box">
+        <h3>KO Networks</h3>
+        <div class="separator"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nostrum laboriosam optio? Distinctio hic quos
+        delectus eligendi autem, eveniet pariatur praesentium enim laudantium tempora recusandae itaque, iure
+        exercitationem omnis earum.
+        <div class="separator"></div>
+        <div class="close-modal" onclick="closeModal()">Close</div>
+    </div>
+    <a href="login.html">
+        <div id="logout-btn">
+            <img src="resources/log-out-icon.png"> Log out
+        </div>
+    </a>
+
     <div class="grid-container">
         <div class="navbar-top">
-            <img src="resources/menu.svg" class="menu-icon">
-            <img src="resources/avatar.jpg" class="avatar">
+            <img src="resources/menu.svg" class="menu-icon" onclick="openNav()">
+            <img src="resources/avatar.jpg" class="avatar" onclick="toggleLogoutBtn()">
         </div>
 
-        <div class="sidebar">
+        <div id="sidebar">
             <div class="rp-logo">
                 <img src="resources/rp-logo.png">
+                <div class="close-btn" onclick="closeNav()">X</div>
             </div>
             <ul>
-                <li class="nav-active">
-                    Dashboard
+                <li>
+                    <a href="dashboard.html">
+                        Dashboard
+                        <img src="resources/home-icon.png" class="icon">
+                    </a>
                 </li>
                 <div class="separator"></div>
                 <li>
-                    Products Catalog
+                    <a href="catalog.html">
+                        Products Catalog
+                        <img src="resources/catalog-icon.png" class="icon">
+                    </a>
                 </li>
             </ul>
         </div>
         <div class="inner-grid">
             <h3>PRODUCT DETAILS</h3>
-            <img src="resources/ecommerce/001.jpg" class="product-image">
+            <div class="product-image">
+                <img src="resources/ecommerce/001.jpg">
+                <div class="product-images-gallery">
+                    <img src="resources/ecommerce/002.jpg">
+                    <img src="resources/ecommerce/003.jpg">
+                    <img src="resources/ecommerce/004.jpg">
+                    <img src="resources/ecommerce/001.jpg">
+                </div>
+            </div>
+
             <div class="product-description-container">
                 <div class="upper-spaced-bar">
                     <span class="upper-spaced-bar-item">Catalog</span>
@@ -50,12 +82,13 @@
                     $189.95
                     <span class="product-original-price">$200.95</span>
                 </div>
-                
-    
+
+
                 <div class="separator" style="grid-column: 1/4; grid-row: 5;"></div>
 
                 <div class="product-brief">
-                    A chair is a piece of furniture with a raised surface, commonly used to seat a single pserson. Chairs are supported most often by four legs and have a back; a chair can have three legs or
+                    A chair is a piece of furniture with a raised surface, commonly used to seat a single pserson.
+                    Chairs are supported most often by four legs and have a back; a chair can have three legs or
                     can have a different shape.
                 </div>
 
@@ -66,7 +99,7 @@
                 </div>
 
                 <div class="separator" style="grid-column: 1/4;grid-row: 8; "></div>
-                <a href="#seller">About Seller</a>
+                <a href="#seller" onclick="showNodal()">About Seller</a>
                 <div class="separator" style="grid-column: 1/4;grid-row: 10; "></div>
 
                 <div class="info-desc">
@@ -79,30 +112,39 @@
                     <span class="product-info-content">A desc list is perfect for defining terms.</span>
 
                     <div class="product-info-heading">Description lists</div>
-                    <span class="product-info-content">A desc list is perfect for defining terms. A desc list is perfect for defining terms</span>
+                    <span class="product-info-content">A desc list is perfect for defining terms. A desc list is perfect
+                        for defining terms</span>
 
                     <div class="product-info-heading">Description lists</div>
-                    <span class="product-info-content">A desc list is perfect for defining terms. A desc list is perfect for defining terms.</span>
+                    <span class="product-info-content">A desc list is perfect for defining terms. A desc list is perfect
+                        for defining terms.</span>
                 </div>
             </div>
-            
         </div>
+
+        <a href="#top">
+            <div id="goto-top-btn">
+                <img src="resources/up-arrow.png">
+            </div>
+        </a>
+
 
         <footer id="footer">
             <div>RedPanda UI HTML - CSS Basic Template - FED! </div>
             <div>
                 <p>
-                    We are a team of principled software engineers with experience of successfully delivering software products and building high performance
+                    We are a team of principled software engineers with experience of successfully delivering software
+                    products and building high performance
                     teams for Start ups to Fortune 500 companies.
-                    Our foundations is built on a carefully crafted value system which guides our ways of working and the quality and success of our products.
+                    Our foundations is built on a carefully crafted value system which guides our ways of working and
+                    the quality and success of our products.
                 </p>
-        
+
             </div>
         </footer>
     </div>
 
-
-
+    <script src="func.js"></script>
 </body>
 
 </html>

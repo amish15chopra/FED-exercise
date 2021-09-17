@@ -15,23 +15,36 @@
 </head>
 
 <body>
+    <a href="login.html">
+        <div id="logout-btn">
+            <img src="resources/log-out-icon.png"> Log out
+        </div>
+    </a>
+    
     <div class="grid-container">
         <div class="navbar-top">
-            <img src="resources/menu.svg" class="menu-icon">
-            <img src="resources/avatar.jpg" class="avatar">
+            <img src="resources/menu.svg" class="menu-icon" onclick="openNav()">
+            <img src="resources/avatar.jpg" class="avatar" onclick="toggleLogoutBtn()">
         </div>
 
-        <div class="sidebar">
+        <div id="sidebar">
             <div class="rp-logo">
                 <img src="resources/rp-logo.png">
+                <div class="close-btn" onclick="closeNav()">X</div>
             </div>
             <ul>
                 <li class="nav-active">
-                    Dashboard
+                    <a href="dashboard.html">
+                        Dashboard
+                        <img src="resources/home-icon.png"  class="icon">
+                    </a>
                 </li>
                 <div class="separator"></div>
                 <li>
-                    Products Catalog
+                    <a href="catalog.html">
+                        Products Catalog
+                        <img src="resources/catalog-icon.png"  class="icon">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -216,7 +229,7 @@
 
 
     </div>
-
+    <script src="func.js"></script>
 </body>
 
 </html>
