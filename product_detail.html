@@ -33,8 +33,11 @@
 
     <div class="grid-container">
         <div class="navbar-top">
+            <div class="icon-container" onclick="toggleLogoutBtn()">
+                <img src="resources/down-arrow.png" class="down-arrow">
+                <img src="resources/avatar.jpg" class="avatar">
+            </div>
             <img src="resources/menu.svg" class="menu-icon" onclick="openNav()">
-            <img src="resources/avatar.jpg" class="avatar" onclick="toggleLogoutBtn()">
         </div>
 
         <div id="sidebar">
@@ -58,6 +61,13 @@
                 </li>
             </ul>
         </div>
+       <a href="catalog.html">
+            <div class="back-btn">
+                <img src="resources/back-arrow.png" style="width: 20px; height: 20px; vertical-align: middle;">
+                Back
+            </div>
+       </a> 
+
         <div class="inner-grid">
             <h3>PRODUCT DETAILS</h3>
             <div class="product-image">
@@ -103,48 +113,67 @@
                 <div class="separator" style="grid-column: 1/4;grid-row: 10; "></div>
 
                 <div class="info-desc">
-                    <span class="info">Information</span>
-                    <span class="desc">Description</span>
+                    <div class="info" onclick="showProductInfo()">Information</div>
+                    <div class="desc" onclick="showProductDescription()">Description</div>
                 </div>
-                <div class="separator" style="grid-column: 1/4;grid-row: 12; "></div>
-                <div class="desc-text">
+                <!-- <div class="separator" style="grid-column: 1/4;grid-row: 12; "></div> -->
+                <div class="desc-text-product-info">
                     <div class="product-info-heading">Description lists</div>
-                    <span class="product-info-content">A desc list is perfect for defining terms.</span>
+                    <span class="product-info-content">
+                        A desc list is perfect for defining terms.
+                    </span>
 
-                    <div class="product-info-heading">Description lists</div>
-                    <span class="product-info-content">A desc list is perfect for defining terms. A desc list is perfect
-                        for defining terms</span>
+                    <div class="product-info-heading">Euismod</div>
+                    <span class="product-info-content">
+                        Vestibulum id ligula porta felis euismod semper get lacinia odio sem nec elit
+                        Donec id elit non mi porta gravida
+                    </span>
 
-                    <div class="product-info-heading">Description lists</div>
-                    <span class="product-info-content">A desc list is perfect for defining terms. A desc list is perfect
-                        for defining terms.</span>
+                    <div class="product-info-heading">Malesuada porta</div>
+                    <span class="product-info-content">
+                        Etiam porta sem malesuada magna mollis euismod
+                    </span>
+
+                    <div class="product-info-heading">Qui eiusmod magna</div>
+                    <span class="product-info-content">
+                        Lore ipsum In enim nostrud ut in mollit sint cillum laborum ea quis qui
+                    </span>
+                </div>
+
+                <div class="desc-text-product-description">
+                    <span class="product-info-content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, repellendus aperiam quisquam minus saepe, pariatur assumenda autem dolorem dolorum eum dolores animi, unde hic quidem sapiente corrupti quos corporis earum?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit magnam ipsum eos soluta, maxime quisquam iusto labore aliquid veniam, similique mollitia laudantium est itaque nihil temporibus blanditiis illum? Sed, corporis!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio commodi maiores voluptates laborum! Earum fugiat aut sit repellendus eligendi quas fugit exercitationem facilis enim impedit. Eius repellat pariatur iure labore.
+                    </span>
+
                 </div>
             </div>
+
+            <a href="#top">
+                <div id="goto-top-btn">
+                    <img src="resources/up-arrow.png">
+                </div>
+            </a>
         </div>
-
-        <a href="#top">
-            <div id="goto-top-btn">
-                <img src="resources/up-arrow.png">
-            </div>
-        </a>
-
 
         <footer id="footer">
             <div>RedPanda UI HTML - CSS Basic Template - FED! </div>
             <div>
                 <p>
-                    We are a team of principled software engineers with experience of successfully delivering software
+                    We are a team of principled software engineers with experience of successfully delivering
+                    software
                     products and building high performance
                     teams for Start ups to Fortune 500 companies.
-                    Our foundations is built on a carefully crafted value system which guides our ways of working and
+                    Our foundations is built on a carefully crafted value system which guides our ways of working
+                    and
                     the quality and success of our products.
                 </p>
 
             </div>
         </footer>
-    </div>
 
-    <script src="func.js"></script>
+        <script src="func.js"></script>
 </body>
 
 </html>
