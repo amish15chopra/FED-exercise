@@ -1,5 +1,4 @@
 TODO:
-- vertical align icons
 - parallelograms in product detail page
 - mobile version of product detail page
 - products catalog heading
