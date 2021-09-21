@@ -59,9 +59,8 @@ img {
   .icon {
     width: 15px;
     height: 15px;
-    float: right;
-    margin-right: 15px;
-    display: inline-block;
+    margin-left: auto;
+    margin-right: 20px;
   }
   ul {
     margin: 0;
@@ -90,6 +89,8 @@ img {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: flex;
+    align-items: center;
   }
 
   .nav-active {
